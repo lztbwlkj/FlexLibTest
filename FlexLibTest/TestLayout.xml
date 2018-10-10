@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIView layout="flex:1,flexDirection:row,alignItems:center" attr="bgColor:white">
+    <UIView layout="width:100%" attr="bgColor:red">
+        <UILabel layout="width:100%, marginBottom:50" attr="text:快速发起,fontSize:16,color:#98EE83,textAlign:center"/>
+    </UIView>
+</UIView>

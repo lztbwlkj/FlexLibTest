@@ -1,0 +1,18 @@
+PODS:
+  - FlexLib (1.9.2):
+    - FlexLib/no-arc (= 1.9.2)
+    - Yoga (= 1.6.0)
+  - FlexLib/no-arc (1.9.2):
+    - Yoga (= 1.6.0)
+  - Yoga (1.6.0)
+
+DEPENDENCIES:
+  - FlexLib
+
+SPEC CHECKSUMS:
+  FlexLib: 2ad181452278f13f59e5678843dc9abc105f130f
+  Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
+
+PODFILE CHECKSUM: b8a69508e2e1a1a590ca394d63be12a7128ea4a9
+
+COCOAPODS: 1.4.0
