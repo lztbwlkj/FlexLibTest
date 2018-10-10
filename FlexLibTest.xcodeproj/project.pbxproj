@@ -10,6 +10,9 @@
 		17CF3A53111596AA2E079716 /* Pods_FlexLibTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A503FA68912FB116864FBA /* Pods_FlexLibTestTests.framework */; };
 		229C54161DCDB20792EEF247 /* Pods_FlexLibTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AB6CFFEA2895A343FF88F8 /* Pods_FlexLibTest.framework */; };
 		6A4032323B8AAE1C54972150 /* Pods_FlexLibTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5716F4B45460796545A068EA /* Pods_FlexLibTestUITests.framework */; };
+		880F9256216DB7C3000BEE59 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F9255216DB7C3000BEE59 /* BaseViewController.m */; };
+		880F925A216DD1E9000BEE59 /* addnewtype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F9258216DD1E9000BEE59 /* addnewtype@2x.png */; };
+		880F925B216DD1E9000BEE59 /* batchcheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 880F9259216DD1E9000BEE59 /* batchcheck@2x.png */; };
 		88A0017B216C3BAC00AEC30D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0017A216C3BAC00AEC30D /* AppDelegate.m */; };
 		88A0017E216C3BAD00AEC30D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0017D216C3BAD00AEC30D /* ViewController.m */; };
 		88A00181216C3BAD00AEC30D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A0017F216C3BAD00AEC30D /* Main.storyboard */; };
@@ -48,6 +51,10 @@
 		5716F4B45460796545A068EA /* Pods_FlexLibTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexLibTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F53DE71FCA690CBFA5878E /* Pods-FlexLibTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLibTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlexLibTestUITests/Pods-FlexLibTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7735CF85FFBD72D2DC419297 /* Pods-FlexLibTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLibTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexLibTest/Pods-FlexLibTest.release.xcconfig"; sourceTree = "<group>"; };
+		880F9254216DB7C3000BEE59 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		880F9255216DB7C3000BEE59 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		880F9258216DD1E9000BEE59 /* addnewtype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addnewtype@2x.png"; sourceTree = "<group>"; };
+		880F9259216DD1E9000BEE59 /* batchcheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batchcheck@2x.png"; sourceTree = "<group>"; };
 		88A00176216C3BAC00AEC30D /* FlexLibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexLibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A00179216C3BAC00AEC30D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88A0017A216C3BAC00AEC30D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880F9257216DC9B1000BEE59 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				880F9258216DD1E9000BEE59 /* addnewtype@2x.png */,
+				880F9259216DD1E9000BEE59 /* batchcheck@2x.png */,
+				88A001AC216C449700AEC30D /* TestLayout.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
 		88A0016D216C3BAC00AEC30D = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +138,13 @@
 		88A00178216C3BAC00AEC30D /* FlexLibTest */ = {
 			isa = PBXGroup;
 			children = (
+				880F9257216DC9B1000BEE59 /* xml */,
 				88A00179216C3BAC00AEC30D /* AppDelegate.h */,
 				88A0017A216C3BAC00AEC30D /* AppDelegate.m */,
 				88A0017C216C3BAC00AEC30D /* ViewController.h */,
 				88A0017D216C3BAD00AEC30D /* ViewController.m */,
-				88A001AC216C449700AEC30D /* TestLayout.xml */,
+				880F9254216DB7C3000BEE59 /* BaseViewController.h */,
+				880F9255216DB7C3000BEE59 /* BaseViewController.m */,
 				88A0017F216C3BAD00AEC30D /* Main.storyboard */,
 				88A001AB216C438600AEC30D /* PrefixHeader.pch */,
 				88A00182216C3BBC00AEC30D /* Assets.xcassets */,
@@ -289,9 +308,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880F925B216DD1E9000BEE59 /* batchcheck@2x.png in Resources */,
 				88A00186216C3BBC00AEC30D /* LaunchScreen.storyboard in Resources */,
 				88A00183216C3BBC00AEC30D /* Assets.xcassets in Resources */,
 				88A00181216C3BAD00AEC30D /* Main.storyboard in Resources */,
+				880F925A216DD1E9000BEE59 /* addnewtype@2x.png in Resources */,
 				88A001AD216C449700AEC30D /* TestLayout.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A0017E216C3BAD00AEC30D /* ViewController.m in Sources */,
+				880F9256216DB7C3000BEE59 /* BaseViewController.m in Sources */,
 				88A00189216C3BBC00AEC30D /* main.m in Sources */,
 				88A0017B216C3BAC00AEC30D /* AppDelegate.m in Sources */,
 			);

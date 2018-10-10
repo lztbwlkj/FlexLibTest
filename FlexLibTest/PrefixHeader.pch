@@ -13,9 +13,7 @@
 @import UIKit;
 @import Foundation;
 #endif
-
 #import <FlexLib/FlexLib.h>
-
-
+#import "BaseViewController.h"
 
 #endif /* PrefixHeader_pch */

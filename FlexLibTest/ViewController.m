@@ -9,9 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController (){
-    UIView* add;
-    UIView* batch;
-    UILabel* testLabel;
+//    UIView* add;
+//    UIView* batch;
+//    UILabel* testLabel;
+//    UIView *redView;
 }
 @end
 
@@ -23,11 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.avoidiPhoneXBottom = NO;
     self.navigationController.navigationBar.translucent = NO;
-    self.keepNavbarTranslucent = NO;
 
-    [self getSafeArea:YES];
 }
 
+-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
+    return UIEdgeInsetsMake(0,0,0,0);
+}
 
 @end

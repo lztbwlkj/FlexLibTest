@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : FlexBaseVC
+@interface ViewController : BaseViewController
 
 
 @end
