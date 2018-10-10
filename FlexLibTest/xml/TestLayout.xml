@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<UIView layout="flex:1,flexDirection:row,justifyContent:center,alignItems:flex-start" attr="bgColor:white">
-<UILabel layout="width:100%,marginTop:15px" attr="text:快速发起, textAlign:center" />
-<!-- 
-    <UIView layout="width:100%">
-    </UIView> -->
+<UIView layout="flex:1,flexDirection:row,alignItems:center" attr="bgColor:white">
+
+    <UIView layout="width:100%" attr="bgColor:yellow">
+        <UILabel layout="width:100%,marginBottom:20px" attr="text:快速发起, textAlign:center,bgColor:red"/>
+
+        <UIView layout="width:100%,flexDirection:row,justifyContent:space-between,paddingLeft:80,paddingRight:80,paddingBottom:20">
+            <UIView onPress="tapAddAction" layout="alignItems: center">
+                <UIImageView attr="source:addnewtype.png"/>
+                <UILabel layout="marginTop: 10" attr="textAlign: center,fontSize: 14, 
+					color: #666666,text:添加类别"/>
+            </UIView>
+            <UIView onPress="tapAddAction" layout="alignItems: center">
+                <UIImageView attr="source:addnewtype.png"/>
+                <UILabel layout="marginTop: 10" attr="textAlign: center,fontSize: 14, 
+					color: #666666,text:添加类别"/>
+            </UIView>
+        </UIView>
+    </UIView>
 </UIView>

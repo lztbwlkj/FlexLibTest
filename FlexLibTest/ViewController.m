@@ -8,12 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController (){
-//    UIView* add;
-//    UIView* batch;
-//    UILabel* testLabel;
-//    UIView *redView;
-}
+@interface ViewController ()
+
 @end
 
 @implementation ViewController
@@ -24,9 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.avoidiPhoneXBottom = NO;
     self.navigationController.navigationBar.translucent = NO;
 
+    
+    [FlexSetPreviewVC presentInVC:self];
 }
 
 -(UIEdgeInsets)getSafeArea:(BOOL)portrait{
