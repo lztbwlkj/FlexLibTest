@@ -30,6 +30,7 @@ Webkit内核的浏览器，必须加上-webkit前缀。
 
 # 二、基本概念 
 采用Flex布局的元素，称为Flex容器（flex container），简称”容器”。它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称”项目”。
+![image](https://github.com/lztbwlkj/FlexLibTest/blob/master/res/3791e575c48b3698be6a94ae1dbff79d.png)
 
 
 # 三、容器的属性
