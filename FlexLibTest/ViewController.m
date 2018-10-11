@@ -7,27 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "TestVC.h"
+#import "TestTableVC.h"
+#import "TestScrollVC.h"
+#import "TestModalVC.h"
+#import "TestLoginVC.h"
+#import "DemoFlexVC.h"
+#import "TextViewVC.h"
 
-@interface ViewController ()
 
+@interface ViewController (){
+    FlexScrollView *scrollView;
+    UILabel* _label;
+}
+//@property (nonatomic, strong) FlexScrollView *scrollView;
 @end
 
 @implementation ViewController
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.navigationItem.title = @"FlexLib Demo";
+    }
+    return self;
+}
+
 -(NSString *)getFlexName{
-    return @"TestLayout";
+    return NSStringFromClass([self class]);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.navigationController.navigationBar.translucent = NO;
-
     
-    [FlexSetPreviewVC presentInVC:self];
 }
 
--(UIEdgeInsets)getSafeArea:(BOOL)portrait{
-    return UIEdgeInsetsMake(0,0,0,0);
-}
+
+
 
 @end

@@ -15,5 +15,7 @@
 #endif
 #import <FlexLib/FlexLib.h>
 #import "BaseViewController.h"
+#import "HBDNavigationController.h"
+
 
 #endif /* PrefixHeader_pch */
