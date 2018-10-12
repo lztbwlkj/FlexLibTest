@@ -17,10 +17,10 @@
 
 
 @interface ViewController (){
-    FlexScrollView *scrollView;
+//    FlexScrollView *scrollView;
     UILabel* _label;
 }
-//@property (nonatomic, strong) FlexScrollView *scrollView;
+@property (nonatomic, strong) FlexScrollView *scrollView;
 @end
 
 @implementation ViewController
@@ -38,10 +38,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.hbd_barStyle = UIBarStyleBlack;
+    self.hbd_barAlpha = 0.0;
 }
 
+//-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
+//    return UIEdgeInsetsMake(0, 0, 0, 0);
+//}
 
-
+-(void)onTest:(UIButton *)sender{
+    TestVC *vc = [[TestVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

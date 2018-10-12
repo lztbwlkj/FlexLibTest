@@ -13,6 +13,10 @@
 @end
 
 @implementation TestVC
+-(NSString*)getFlexName{
+    return @"TestVC";
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

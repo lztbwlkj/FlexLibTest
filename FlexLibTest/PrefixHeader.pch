@@ -16,6 +16,6 @@
 #import <FlexLib/FlexLib.h>
 #import "BaseViewController.h"
 #import "HBDNavigationController.h"
-
+#import "UIViewController+HBD.h"
 
 #endif /* PrefixHeader_pch */
