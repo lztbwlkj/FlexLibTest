@@ -19,11 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.navigationController.navigationBar.translucent = NO;
-
     
-    [FlexSetPreviewVC presentInVC:self];
 }
 
 -(UIEdgeInsets)getSafeArea:(BOOL)portrait{
