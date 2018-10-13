@@ -4,15 +4,18 @@ PODS:
     - Yoga (= 1.6.0)
   - FlexLib/no-arc (1.9.2):
     - Yoga (= 1.6.0)
+  - HBDNavigationBar (1.3.2)
   - Yoga (1.6.0)
 
 DEPENDENCIES:
   - FlexLib
+  - HBDNavigationBar
 
 SPEC CHECKSUMS:
   FlexLib: 2ad181452278f13f59e5678843dc9abc105f130f
+  HBDNavigationBar: 18466ad5753c61de90bdda7bb0f5de835050f548
   Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
 
-PODFILE CHECKSUM: b8a69508e2e1a1a590ca394d63be12a7128ea4a9
+PODFILE CHECKSUM: 49b5018de1a0b07988c3ae7425f5b2c7c8f6341c
 
 COCOAPODS: 1.4.0

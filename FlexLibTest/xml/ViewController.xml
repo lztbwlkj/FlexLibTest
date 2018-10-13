@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<UIView layout="flex:1,justifyContent:center,alignItems:center" attr="bgColor:white">
+
+	<UIView layout="height:1px,width:*70%" attr="bgColor:red"></UIView>
+	<FlexScrollView name="scrollView" layout="flex:1,width:100%,alignItems:center" attr="vertScroll:true">
+		<UILabel layout="marginTop:20" attr="@:system/buttonText,text:You can run on iPhoneX,color:blue"/>
+		<UILabel layout="marginTop:20" attr="@:system/buttonText,text:@multilangdemo,color:blue,linesNum:0" />
+		<UIView layout="width:100%,flexDirection:row,justifyContent:space-around">
+			<FlexTouchView layout="@:system/button" onPress="onTest:" attr="@:system/buttonAttr">
+				<UILabel attr="@:system/buttonText,text:Test ViewController"/>
+
+
+
+			</FlexTouchView>
+		</UIView>
+	</FlexScrollView>
+</UIView>

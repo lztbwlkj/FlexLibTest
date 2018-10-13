@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //开启本地服务进行预览
     FlexRestorePreviewSetting();
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    ViewController *rootVc = [[ViewController alloc] init];
+    HBDNavigationController *nac = [[HBDNavigationController alloc] initWithRootViewController:rootVc];
+    self.window.rootViewController = nac;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -4,7 +4,8 @@ use_frameworks!
 
 target 'FlexLibTest' do
    inhibit_all_warnings!
-   pod 'FlexLib'
+pod 'HBDNavigationBar'  
+ pod 'FlexLib'
   target 'FlexLibTestTests' do
     inherit! :search_paths
     #Pods for testing

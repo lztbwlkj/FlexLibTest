@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  FlexLibTest
+
+  Created by TuBo on 2018/10/11.
+  Copyright © 2018年 TuBur. All rights reserved.
+*/
+"multilangdemo" = "This string is multi-language demo. You can change system language to see the effect. This example only support English & Chinese.";

@@ -1,18 +1,18 @@
 //
-//  BaseViewController.m
+//  TestScrollVC.m
 //  FlexLibTest
 //
-//  Created by TuBo on 2018/10/10.
+//  Created by TuBo on 2018/10/11.
 //  Copyright © 2018年 TuBur. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "TestScrollVC.h"
 
-@interface BaseViewController ()
+@interface TestScrollVC ()
 
 @end
 
-@implementation BaseViewController
+@implementation TestScrollVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
