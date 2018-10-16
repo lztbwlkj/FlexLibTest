@@ -1,0 +1,6 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<UIView layout="flex:1,flexDirection:row" attr="bgColor:white">
+<UIImageView name="head" layout="">
+
+</UIView>
+
