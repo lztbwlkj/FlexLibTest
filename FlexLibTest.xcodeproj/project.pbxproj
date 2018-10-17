@@ -11,6 +11,10 @@
 		229C54161DCDB20792EEF247 /* Pods_FlexLibTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AB6CFFEA2895A343FF88F8 /* Pods_FlexLibTest.framework */; };
 		6A4032323B8AAE1C54972150 /* Pods_FlexLibTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5716F4B45460796545A068EA /* Pods_FlexLibTestUITests.framework */; };
 		880F9256216DB7C3000BEE59 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F9255216DB7C3000BEE59 /* BaseViewController.m */; };
+		881EE6BA2177366F00951F5C /* TestScrollVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 881EE6B92177366E00951F5C /* TestScrollVC.xml */; };
+		8842BF902175B50B007059FE /* TestTableVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8842BF8F2175B50B007059FE /* TestTableVC.xml */; };
+		8842BF932175B85C007059FE /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842BF922175B85C007059FE /* TestTableCell.m */; };
+		8842BF952175C31F007059FE /* TestTableCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8842BF942175C31F007059FE /* TestTableCell.xml */; };
 		8872A27F2170755E0081EEA4 /* addnewtype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A2792170755E0081EEA4 /* addnewtype@2x.png */; };
 		8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27A2170755E0081EEA4 /* arrow_right@2x.png */; };
 		8872A2812170755E0081EEA4 /* batchcheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27B2170755E0081EEA4 /* batchcheck@2x.png */; };
@@ -67,6 +71,11 @@
 		7735CF85FFBD72D2DC419297 /* Pods-FlexLibTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexLibTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlexLibTest/Pods-FlexLibTest.release.xcconfig"; sourceTree = "<group>"; };
 		880F9254216DB7C3000BEE59 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		880F9255216DB7C3000BEE59 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		881EE6B92177366E00951F5C /* TestScrollVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestScrollVC.xml; sourceTree = "<group>"; };
+		8842BF8F2175B50B007059FE /* TestTableVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestTableVC.xml; sourceTree = "<group>"; };
+		8842BF912175B85C007059FE /* TestTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
+		8842BF922175B85C007059FE /* TestTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
+		8842BF942175C31F007059FE /* TestTableCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestTableCell.xml; sourceTree = "<group>"; };
 		8872A2792170755E0081EEA4 /* addnewtype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addnewtype@2x.png"; sourceTree = "<group>"; };
 		8872A27A2170755E0081EEA4 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		8872A27B2170755E0081EEA4 /* batchcheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batchcheck@2x.png"; sourceTree = "<group>"; };
@@ -146,6 +155,9 @@
 			children = (
 				88A001AC216C449700AEC30D /* TestVC.xml */,
 				888D55C9216F1B1500AE2705 /* ViewController.xml */,
+				8842BF8F2175B50B007059FE /* TestTableVC.xml */,
+				8842BF942175C31F007059FE /* TestTableCell.xml */,
+				881EE6B92177366E00951F5C /* TestScrollVC.xml */,
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -170,6 +182,8 @@
 				888D55E4216F29A200AE2705 /* TestVC.m */,
 				888D55CD216F24F800AE2705 /* TestTableVC.h */,
 				888D55CE216F24F800AE2705 /* TestTableVC.m */,
+				8842BF912175B85C007059FE /* TestTableCell.h */,
+				8842BF922175B85C007059FE /* TestTableCell.m */,
 				888D55D0216F251400AE2705 /* TestScrollVC.h */,
 				888D55D1216F251400AE2705 /* TestScrollVC.m */,
 				888D55D3216F252100AE2705 /* TestModalVC.h */,
@@ -404,13 +418,16 @@
 				8872A2842170755E0081EEA4 /* splash.png in Resources */,
 				888D55FD216F387200AE2705 /* Localizable.strings in Resources */,
 				8872A2812170755E0081EEA4 /* batchcheck@2x.png in Resources */,
+				881EE6BA2177366F00951F5C /* TestScrollVC.xml in Resources */,
 				888D5605216F3ACB00AE2705 /* system.style in Resources */,
 				8872A27F2170755E0081EEA4 /* addnewtype@2x.png in Resources */,
+				8842BF952175C31F007059FE /* TestTableCell.xml in Resources */,
 				88A00183216C3BBC00AEC30D /* Assets.xcassets in Resources */,
 				8872A2832170755E0081EEA4 /* select@2x.png in Resources */,
 				8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */,
 				88A00181216C3BAD00AEC30D /* Main.storyboard in Resources */,
 				888D55CA216F1B1500AE2705 /* ViewController.xml in Resources */,
+				8842BF902175B50B007059FE /* TestTableVC.xml in Resources */,
 				8872A2822170755E0081EEA4 /* return@2x.png in Resources */,
 				88A001AD216C449700AEC30D /* TestVC.xml in Resources */,
 			);
@@ -595,6 +612,7 @@
 				888D55DB216F253C00AE2705 /* DemoFlexVC.m in Sources */,
 				88A0017E216C3BAD00AEC30D /* ViewController.m in Sources */,
 				888D55E5216F29A200AE2705 /* TestVC.m in Sources */,
+				8842BF932175B85C007059FE /* TestTableCell.m in Sources */,
 				888D55D8216F252E00AE2705 /* TestLoginVC.m in Sources */,
 				888D55DE216F254B00AE2705 /* TextViewVC.m in Sources */,
 				880F9256216DB7C3000BEE59 /* BaseViewController.m in Sources */,
