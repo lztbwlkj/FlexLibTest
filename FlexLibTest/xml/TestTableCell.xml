@@ -1,6 +1,13 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
-<UIView layout="flex:1,flexDirection:row" attr="bgColor:white">
-<UIImageView name="head" layout="" attr="">
-
+<UIView layout="flex:1,flexDirection:row,margin:8" attr="bgColor:white">
+	<UIImageView layout="width:40,height:40,marginLeft:10,marginRight:10" attr="source:addnewtype.png"/>
+	<UIView layout="flex:1" attr="">
+	<UIView layout="flexDirection:row">
+		<UILabel name="name" attr="fontSize:14,color:#333333,text:你的名字,linesNum:1"/>
+		<UILabel name="type" layout="flex:1" attr="fontSize:14,color:#999999,text:一般类型,linesNum:1,bgColor:red"/>
+		<UILabel name="date" attr="fontSize:14,color:#999999,text:5-11,linesNum:1,bgColor:yellow"/>
+        <UILabel name="date" attr="fontSize:14,color:#999999,text:5-11,linesNum:1,bgColor:yellow"/>
+	</UIView>
+</UIView>
 </UIView>
 
