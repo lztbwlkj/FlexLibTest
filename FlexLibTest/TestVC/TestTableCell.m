@@ -31,12 +31,19 @@
 }
 
 // 因为仅content影响布局
--(void)setData:(NSDictionary*)data ForHeight:(BOOL)forHeight
+-(void)setData:(NSDictionary*)data ForHeight:(BOOL)forHeight indexPath:(nonnull NSIndexPath *)indexPath
 {
     if(!forHeight){
+        if (indexPath.row == 3) {
+            title.hidden = YES;
+            content.hidden = YES;
+        }else{
+            title.hidden = NO;
+            content.hidden = NO;
+        }
         name.text = [data objectForKey:@"name"];
-        type.text = [data objectForKey:@"type"];
         date.text = [data objectForKey:@"date"];
+        type.text = [data objectForKey:@"type"];
         title.text = [data objectForKey:@"title"];
     }
     content.text = [data objectForKey:@"content"];

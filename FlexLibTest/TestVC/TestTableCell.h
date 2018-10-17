@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TestTableCell : FlexBaseTableCell
--(void)setData:(NSDictionary*)data ForHeight:(BOOL)forHeight;
+-(void)setData:(NSDictionary*)data ForHeight:(BOOL)forHeight indexPath:(NSIndexPath *)indexPath;
 
 @end
 

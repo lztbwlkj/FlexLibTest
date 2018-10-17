@@ -13,7 +13,9 @@
 @end
 
 @implementation TestScrollVC
-
+-(NSString *)getFlexName{
+    return NSStringFromClass([self class]);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

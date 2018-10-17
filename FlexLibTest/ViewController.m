@@ -38,12 +38,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.hbd_barStyle = UIBarStyleBlack;
+    self.hbd_barStyle = UIBarStyleDefault;
     self.hbd_barAlpha = 0.0;
+    
+    [FlexSetPreviewVC presentInVC:self];
 }
 
 //-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
-//    return UIEdgeInsetsMake(0, 0, 0, 0);
+//    return UIEdgeInsetsMake(65, 0, 0, 0);
 //}
 
 -(void)onTest:(UIButton *)sender{

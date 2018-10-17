@@ -11,23 +11,42 @@
 @interface TestTableVC ()<UITableViewDelegate,UITableViewDataSource>{
     UITableView *_table;
     NSMutableArray* _datas;
+    
+    UILabel* content;   //header中的content
+
 }
 
 @end
 
 @implementation TestTableVC
--(NSString *)getFlexName{
-    return NSStringFromClass([self class]);
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.navigationItem.title = @"Table Demo";
+    }
+    return self;
 }
 
+//-(NSString *)getFlexName{
+//    return NSStringFromClass([self class]);
+//}
+
+//-(void)tableHeaderFrameChange{
+//    [_table beginUpdates];
+//    [_table setTableHeaderView:_table.tableHeaderView];
+//    [_table endUpdates];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor lightGrayColor];
 
-    self.navigationItem.title = @"Table Demo";
+    self.avoidiPhoneXBottom = NO;
+    
     _table.delegate = self;
     _table.dataSource = self;
-    
+
     NSArray* datas =
     @[
       @{
@@ -149,7 +168,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _datas.count ;
+    return _datas.count;
 }
 
 static NSString *identifier = @"TestTableCellIdentifier";
@@ -158,7 +177,10 @@ static NSString *identifier = @"TestTableCellIdentifier";
     if (!cell) {
         cell = [[TestTableCell alloc] initWithFlex:nil reuseIdentifier:identifier];
     }
-    [cell setData:_datas[indexPath.row] ForHeight:NO];
+    [cell setData:_datas[indexPath.row] ForHeight:NO indexPath:indexPath];
+    if (indexPath.row == 3) {
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    }
     return cell;
 }
 
@@ -167,9 +189,15 @@ static NSString *identifier = @"TestTableCellIdentifier";
     if(cell==nil){
         cell = [[TestTableCell alloc] initWithFlex:nil reuseIdentifier:nil];
     }
-    [cell setData:_datas[indexPath.row] ForHeight:YES];
+    [cell setData:_datas[indexPath.row] ForHeight:YES indexPath:indexPath];
     CGFloat h = [cell heightForWidth:tableView.frame.size.width];
+    if (indexPath.row == 3) {
+        NSLog(@"h = %.2f",h);
+    }
     return h;
 }
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end

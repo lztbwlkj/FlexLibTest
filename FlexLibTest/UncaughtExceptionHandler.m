@@ -5,7 +5,6 @@
 //  Created by TuBo on 2018/10/12.
 //  Copyright © 2018年 TuBur. All rights reserved.
 //
-//<pre name="code" class="objc">//
 #import "UncaughtExceptionHandler.h"
 #import <UIKit/UIKit.h>
 #include <libkern/OSAtomic.h>
