@@ -7,7 +7,7 @@
 	</style>
 	<style name="button">
 		<attr name="height">44</attr>
-		<attr name="width">150</attr>
+		<attr name="width">100</attr>
 		<attr name="alignItems">center</attr>
 		<attr name="justifyContent">center</attr>
 		<attr name="margin">20</attr>

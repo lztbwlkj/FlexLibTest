@@ -17,7 +17,6 @@
 		8872A2822170755E0081EEA4 /* return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27C2170755E0081EEA4 /* return@2x.png */; };
 		8872A2832170755E0081EEA4 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27D2170755E0081EEA4 /* select@2x.png */; };
 		8872A2842170755E0081EEA4 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27E2170755E0081EEA4 /* splash.png */; };
-		8872A28721708B1A0081EEA4 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8872A28621708B1A0081EEA4 /* UncaughtExceptionHandler.m */; };
 		888D55CA216F1B1500AE2705 /* ViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 888D55C9216F1B1500AE2705 /* ViewController.xml */; };
 		888D55CF216F24F800AE2705 /* TestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 888D55CE216F24F800AE2705 /* TestTableVC.m */; };
 		888D55D2216F251400AE2705 /* TestScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 888D55D1216F251400AE2705 /* TestScrollVC.m */; };
@@ -74,8 +73,6 @@
 		8872A27C2170755E0081EEA4 /* return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return@2x.png"; sourceTree = "<group>"; };
 		8872A27D2170755E0081EEA4 /* select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
 		8872A27E2170755E0081EEA4 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
-		8872A28521708B1A0081EEA4 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
-		8872A28621708B1A0081EEA4 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		888D55C9216F1B1500AE2705 /* ViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ViewController.xml; sourceTree = "<group>"; };
 		888D55CD216F24F800AE2705 /* TestTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableVC.h; sourceTree = "<group>"; };
 		888D55CE216F24F800AE2705 /* TestTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableVC.m; sourceTree = "<group>"; };
@@ -221,6 +218,7 @@
 		88A00178216C3BAC00AEC30D /* FlexLibTest */ = {
 			isa = PBXGroup;
 			children = (
+				DC4F980A21721A4F000C7FFB /* System */,
 				8872A2782170755E0081EEA4 /* image */,
 				888D5604216F3ACB00AE2705 /* system.style */,
 				888D55DF216F256300AE2705 /* BaseVC */,
@@ -230,15 +228,6 @@
 				88A0017A216C3BAC00AEC30D /* AppDelegate.m */,
 				88A0017C216C3BAC00AEC30D /* ViewController.h */,
 				88A0017D216C3BAD00AEC30D /* ViewController.m */,
-				8872A28521708B1A0081EEA4 /* UncaughtExceptionHandler.h */,
-				8872A28621708B1A0081EEA4 /* UncaughtExceptionHandler.m */,
-				88A0017F216C3BAD00AEC30D /* Main.storyboard */,
-				88A001AB216C438600AEC30D /* PrefixHeader.pch */,
-				88A00182216C3BBC00AEC30D /* Assets.xcassets */,
-				88A00184216C3BBC00AEC30D /* LaunchScreen.storyboard */,
-				88A00187216C3BBC00AEC30D /* Info.plist */,
-				88A00188216C3BBC00AEC30D /* main.m */,
-				888D55FF216F387200AE2705 /* Localizable.strings */,
 			);
 			path = FlexLibTest;
 			sourceTree = "<group>";
@@ -282,6 +271,20 @@
 				19534C1C1836B13F8C5B76F0 /* Pods-FlexLibTestUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC4F980A21721A4F000C7FFB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				88A0017F216C3BAD00AEC30D /* Main.storyboard */,
+				88A001AB216C438600AEC30D /* PrefixHeader.pch */,
+				88A00182216C3BBC00AEC30D /* Assets.xcassets */,
+				88A00184216C3BBC00AEC30D /* LaunchScreen.storyboard */,
+				88A00187216C3BBC00AEC30D /* Info.plist */,
+				88A00188216C3BBC00AEC30D /* main.m */,
+				888D55FF216F387200AE2705 /* Localizable.strings */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,7 +596,6 @@
 				88A0017E216C3BAD00AEC30D /* ViewController.m in Sources */,
 				888D55E5216F29A200AE2705 /* TestVC.m in Sources */,
 				888D55D8216F252E00AE2705 /* TestLoginVC.m in Sources */,
-				8872A28721708B1A0081EEA4 /* UncaughtExceptionHandler.m in Sources */,
 				888D55DE216F254B00AE2705 /* TextViewVC.m in Sources */,
 				880F9256216DB7C3000BEE59 /* BaseViewController.m in Sources */,
 				88A00189216C3BBC00AEC30D /* main.m in Sources */,
@@ -787,8 +789,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NAWCVDY3ZB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FlexLibTest/PrefixHeader.pch;
-				INFOPLIST_FILE = FlexLibTest/Info.plist;
+				GCC_PREFIX_HEADER = FlexLibTest/System/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/FlexLibTest/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -807,8 +809,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NAWCVDY3ZB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FlexLibTest/PrefixHeader.pch;
-				INFOPLIST_FILE = FlexLibTest/Info.plist;
+				GCC_PREFIX_HEADER = FlexLibTest/System/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/FlexLibTest/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
