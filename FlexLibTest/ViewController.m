@@ -80,28 +80,4 @@
     [FlexLayoutViewerVC presentInVC:self];
 }
 
-- (void)onTestTable:(id)sender {
-    TestTableVC* vc=[[TestTableVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTestScrollView:(id)sender {
-    TestScrollVC* vc=[[TestScrollVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTestModalView:(id)sender {
-    TestModalVC* vc=[[TestModalVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTestLoginView:(id)sender {
-    TestLoginVC* vc=[[TestLoginVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onjustifyContent:(id)sender {
-    DemoFlexVC* vc=[[DemoFlexVC alloc] initWithFlexName:@"justifyContent"];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTextView:(id)sender {
-    TextViewVC* vc=[[TextViewVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
 @end
