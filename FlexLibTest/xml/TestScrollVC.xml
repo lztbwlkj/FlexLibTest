@@ -1,7 +1,6 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
-<UIView layout="flex:1,alignItems:center" attr="bgColor:white">
-	<UIView layout="width:100%,height:1" attr="bgColor:red"></UIView>
-	<FlexScrollView layout="flex:1" attr="vertScroll:true,bgColor:red">
-		<UILabel attr="fontSize:14,color:#666666,text:Serial No."/>
-	</FlexScrollView>
+<UIView layout="flex:1" attr="bgColor:white">
+	<UIView layout="width:100,height:5" attr="bgColor:red"></UIView>
+	<UIView layout="width:100,height:5" attr="bgColor:blue"></UIView>
+	<UIView layout="width:100,height:5" attr="bgColor:green"></UIView>
 </UIView>
