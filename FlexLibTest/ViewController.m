@@ -38,8 +38,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.hbd_barStyle = UIBarStyleDefault;
-    self.hbd_barAlpha = 0.0;
+//    self.hbd_barStyle = UIBarStyleDefault;
+//    self.hbd_barAlpha = 0.0;
     
     [FlexSetPreviewVC presentInVC:self];
 }

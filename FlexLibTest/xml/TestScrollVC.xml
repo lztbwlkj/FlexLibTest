@@ -1,6 +1,26 @@
 <?xml version = "1.0" encoding = "utf-8" ?>
 <UIView layout="flex:1" attr="bgColor:white">
-	<UIView layout="width:100,height:5" attr="bgColor:red"></UIView>
-	<UIView layout="width:100,height:5" attr="bgColor:blue"></UIView>
-	<UIView layout="width:100,height:5" attr="bgColor:green"></UIView>
+	<UIView layout="width:100%,height:1" attr="bgColor:red"></UIView>
+	<FlexScrollView layout="flex:1,padding:10,width:100%" attr="bgColor:#f5f5f5, vertScroll:true,horzIndicator:false">
+		<UILabel layout="width:100%" attr="text:Serial No.,color:black,fontSize:16"/>
+		<UIView layout="width:100%,paddingLeft:10,paddingRight:10,marginTop        :10" attr="@:system/border,bgColor:white">
+			<UITextField layout="height:40" attr="placeholder:Input the sn here,keyboardType:numberPad"/>
+		</UIView>
+		<UILabel layout="width:100%,height:60,marginTop:10,marginBottom:8" attr="stickTop:true,text:这是一个能够吸附到顶部的控件\,请滚动一下看看效果\,每个scrollview只支持1个吸顶控件……,linesNum:0,bgColor:lightGray,fontSize:18,color:#880000" />
+		<UIView layout="flexDirection:row,alignContent:center,padding:8" attr="@:system/border,bgColor:white">
+			<UIImageView layout="width:40,height:40,marginRight:10" attr="source:batchcheck.png"/>
+			<UIView>
+				<UILabel attr="text:Name - zhenglibao,color:#666666"/>
+				<UILabel layout="marginTop:8" attr="text:Your favorite.,color:#666666,fontSize:12"/>
+			</UIView>
+		</UIView>
+		<UIView layout="padding:8,marginTop:10" attr="@:system/border,bgColor:white">
+			<UILabel layout="marginLeft:8" attr="text:Sex"/>
+			<UIView layout="marginTop:10,marginBottom:5,flexDirection:row,justifyContent:space-around,alignItems:baseline">
+				<UILabel layout="width:*30%" attr="@:system/redBorder,text:200,textAlign:center" />		
+				<UILabel layout="width:*30%" attr="@:system/redBorder,text:300,textAlign:center" />
+				<UILabel layout="width:*30%" attr="@:system/redBorder,text:400,textAlign:center" />
+			</UIView>
+		</UIView>
+	</FlexScrollView>
 </UIView>
