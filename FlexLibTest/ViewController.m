@@ -38,15 +38,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.hbd_barStyle = UIBarStyleDefault;
+    self.hbd_barStyle = UIBarStyleBlack;
 //    self.hbd_barAlpha = 0.0;
-    
+    self.keepNavbarTranslucent = NO;
     [FlexSetPreviewVC presentInVC:self];
 }
-
-//-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
-//    return UIEdgeInsetsMake(65, 0, 0, 0);
-//}
 
 -(void)onTest:(UIButton *)sender{
     TestVC *vc = [[TestVC alloc] init];
@@ -79,5 +75,18 @@
 - (void)onViewLayouts:(id)sender {
     [FlexLayoutViewerVC presentInVC:self];
 }
+-(BOOL)shouldAutorotate{
+    return YES;
+}
+
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationLandscapeRight;
+}
+
+
 
 @end

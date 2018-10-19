@@ -16,10 +16,16 @@
 @implementation BaseViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
 }
 
+
+-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
+    if (portrait) {
+        return UIEdgeInsetsMake(64, 0, 0, 0);
+    }
+    return UIEdgeInsetsMake(32, 0, 0, 0);
+}
 /*
 #pragma mark - Navigation
 
