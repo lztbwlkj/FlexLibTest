@@ -15,6 +15,7 @@
 		8842BF902175B50B007059FE /* TestTableVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8842BF8F2175B50B007059FE /* TestTableVC.xml */; };
 		8842BF932175B85C007059FE /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842BF922175B85C007059FE /* TestTableCell.m */; };
 		8842BF952175C31F007059FE /* TestTableCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8842BF942175C31F007059FE /* TestTableCell.xml */; };
+		8843F3032179B8390040DBBE /* FlexNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843F3022179B8390040DBBE /* FlexNavigationController.m */; };
 		8872A27F2170755E0081EEA4 /* addnewtype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A2792170755E0081EEA4 /* addnewtype@2x.png */; };
 		8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27A2170755E0081EEA4 /* arrow_right@2x.png */; };
 		8872A2812170755E0081EEA4 /* batchcheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27B2170755E0081EEA4 /* batchcheck@2x.png */; };
@@ -76,6 +77,8 @@
 		8842BF912175B85C007059FE /* TestTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
 		8842BF922175B85C007059FE /* TestTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
 		8842BF942175C31F007059FE /* TestTableCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestTableCell.xml; sourceTree = "<group>"; };
+		8843F3012179B8390040DBBE /* FlexNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexNavigationController.h; sourceTree = "<group>"; };
+		8843F3022179B8390040DBBE /* FlexNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexNavigationController.m; sourceTree = "<group>"; };
 		8872A2792170755E0081EEA4 /* addnewtype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addnewtype@2x.png"; sourceTree = "<group>"; };
 		8872A27A2170755E0081EEA4 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		8872A27B2170755E0081EEA4 /* batchcheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batchcheck@2x.png"; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			children = (
 				880F9254216DB7C3000BEE59 /* BaseViewController.h */,
 				880F9255216DB7C3000BEE59 /* BaseViewController.m */,
+				8843F3012179B8390040DBBE /* FlexNavigationController.h */,
+				8843F3022179B8390040DBBE /* FlexNavigationController.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8843F3032179B8390040DBBE /* FlexNavigationController.m in Sources */,
 				888D55D5216F252100AE2705 /* TestModalVC.m in Sources */,
 				888D55DB216F253C00AE2705 /* DemoFlexVC.m in Sources */,
 				88A0017E216C3BAD00AEC30D /* ViewController.m in Sources */,

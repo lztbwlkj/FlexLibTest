@@ -38,15 +38,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.hbd_barStyle = UIBarStyleDefault;
-    self.hbd_barAlpha = 0.0;
-    
+    self.hbd_barStyle = UIBarStyleBlack;
+//    self.hbd_barAlpha = 0.0;
+    self.keepNavbarTranslucent = NO;
     [FlexSetPreviewVC presentInVC:self];
 }
-
-//-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
-//    return UIEdgeInsetsMake(65, 0, 0, 0);
-//}
 
 -(void)onTest:(UIButton *)sender{
     TestVC *vc = [[TestVC alloc] init];
@@ -79,29 +75,18 @@
 - (void)onViewLayouts:(id)sender {
     [FlexLayoutViewerVC presentInVC:self];
 }
+-(BOOL)shouldAutorotate{
+    return YES;
+}
 
-- (void)onTestTable:(id)sender {
-    TestTableVC* vc=[[TestTableVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+//-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationLandscapeRight;
 }
-- (void)onTestScrollView:(id)sender {
-    TestScrollVC* vc=[[TestScrollVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTestModalView:(id)sender {
-    TestModalVC* vc=[[TestModalVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTestLoginView:(id)sender {
-    TestLoginVC* vc=[[TestLoginVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onjustifyContent:(id)sender {
-    DemoFlexVC* vc=[[DemoFlexVC alloc] initWithFlexName:@"justifyContent"];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)onTextView:(id)sender {
-    TextViewVC* vc=[[TextViewVC alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+
+
+
 @end

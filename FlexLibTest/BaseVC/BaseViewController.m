@@ -8,18 +8,24 @@
 
 #import "BaseViewController.h"
 
+
 @interface BaseViewController ()
 
 @end
 
 @implementation BaseViewController
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
+
+-(UIEdgeInsets)getSafeArea:(BOOL)portrait{
+    if (portrait) {
+        return UIEdgeInsetsMake(64, 0, 0, 0);
+    }
+    return UIEdgeInsetsMake(32, 0, 0, 0);
+}
 /*
 #pragma mark - Navigation
 

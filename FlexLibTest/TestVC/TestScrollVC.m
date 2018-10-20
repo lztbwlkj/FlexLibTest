@@ -8,7 +8,11 @@
 
 #import "TestScrollVC.h"
 
-@interface TestScrollVC ()
+@interface TestScrollVC (){
+    UILabel* multilabel;
+    UILabel* touchlabel;
+
+}
 
 @end
 
@@ -18,8 +22,23 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    multilabel.hidden = YES;
+    touchlabel.text = @"哈哈😄我只是看看效果";
 }
+-(void)tapShow{
+    multilabel.hidden=!multilabel.hidden;
+
+//    [multilabel.rootView layoutAnimation:0.3];
+}
+
+-(BOOL)shouldAutorotate{
+    return YES;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscapeRight;
+}
+
 
 /*
 #pragma mark - Navigation
