@@ -75,17 +75,6 @@
 - (void)onViewLayouts:(id)sender {
     [FlexLayoutViewerVC presentInVC:self];
 }
--(BOOL)shouldAutorotate{
-    return YES;
-}
-
-//-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
-//    return UIInterfaceOrientationMaskPortrait;
-//}
-
--(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    return UIInterfaceOrientationLandscapeRight;
-}
 
 
 

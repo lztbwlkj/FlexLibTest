@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- 主视图的创建 -->
+<UIView layout="flex:1" attr="bgColor:white">
+	<!-- 添加scrollView  内边距为50 -->
+	<FlexScrollView layout="flex:1,padding:50" attr="vertScroll:true">
+		<!-- 添加点击的三个按钮 -->
+		<FlexTouchView onPress="tapModalTop" layout="width:100%,height:120,justifyContent:center,alignItems:center" attr="@:system/buttonAttr,underlayColor:darkGray,bgColor:lightGray">
+			<UILabel layout="width:100%" attr="color:blue,text:Click Show Model top,textAlign:center" />
+		</FlexTouchView>
+		<FlexTouchView onPress="tapModalCenter" layout="marginTop:20,width:100%,height:120,justifyContent:center,alignItems:center" attr="underlayColor:darkGray,bgColor:lightGray">
+			<UILabel layout="width:100%" attr="color:blue,text:Click Show Model Center,textAlign:center" />
+		</FlexTouchView>
+		<FlexTouchView onPress="tapModalBottom" layout="marginTop:20,width:100%,height:120,justifyContent:center,alignItems:center" attr="underlayColor:darkGray,bgColor:lightGray">
+			<UILabel layout="width:100%" attr="color:blue,text:Click Show Model Bottom,textAlign:center" />
+		</FlexTouchView>
+	</FlexScrollView>
+	<FlexModalView name="modelView" layout="width:100%" attr="position:center,bgColor:#f5f5f5,cancelable:true">
+		<UIView layout="height:1" attr="bgColor:#e6e6e6"/>
+		<!-- @:system/filterRow -->
+		<UIView layout="flexDirection:row,height:44,justifyContent:space-between,paddingLeft:14,paddingRight:8,alignItems:center" attr="bgColor:#fafafa">
+			<UILabel layout="" attr="@:system/filterLeftLabel,text:领用人" />
+			<UILabel layout="flex:1" attr="@:system/rightContent,text:成龙" />
+			<UIImageView attr="source:arrow_right.png"/>
+		</UIView>
+		<UIView layout="height:1" attr="bgColor:#e6e6e6"/>
+		<UIView layout="@:system/filterRow" attr="bgColor:#fafafa" > 
+		  	<UILabel layout="" attr="@:system/filterLeftLabel,text:操作时间" />
+			<UILabel layout="flex:1" attr="@:system/rightContent,text:2018-10-22"/>
+			<UIImageView attr="source:arrow_right.png"/>
+		</UIView>
+	</FlexModalView>
+</UIView>

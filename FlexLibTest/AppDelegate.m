@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "FlexNavigationController.h"
-
 @interface AppDelegate ()
 
 @end
@@ -23,31 +22,10 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    //1、初始化两个视图控制器
+    
     ViewController *homeVC = [[ViewController alloc] init];
-//    ViewController *mineVC = [[ViewController alloc] init];
-    
-//    //2、为两个视图控制器添加导航栏控制器
     FlexNavigationController *homeNVC = [[FlexNavigationController alloc] initWithRootViewController:homeVC];
-//    FlexNavigationController *mineNVC = [[FlexNavigationController alloc] initWithRootViewController:mineVC];
-//
-//
-//    //设置控制器文字
-//    homeNVC.title = @"首页";
-//    mineNVC.title = @"个人中心";
-//
-//    //改变tabbarController 文字选中颜色(默认渲染为蓝色)
-//    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor lightGrayColor]} forState:UIControlStateNormal];
-//    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
-//
-//    UITabBarController *tabBarController = [[UITabBarController alloc]init];
-//
-//    //创建一个数组包含四个导航栏控制器
-//    NSArray *vcArry = [NSArray arrayWithObjects:homeNVC,mineNVC,nil];
-//    //将数组传给UITabBarController
-//    tabBarController.viewControllers = vcArry.mutableCopy;
-    
-     
+
     self.window.rootViewController = homeNVC;
     [self.window makeKeyAndVisible];
     

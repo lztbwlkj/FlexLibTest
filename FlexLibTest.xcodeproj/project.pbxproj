@@ -16,6 +16,7 @@
 		8842BF932175B85C007059FE /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8842BF922175B85C007059FE /* TestTableCell.m */; };
 		8842BF952175C31F007059FE /* TestTableCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8842BF942175C31F007059FE /* TestTableCell.xml */; };
 		8843F3032179B8390040DBBE /* FlexNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8843F3022179B8390040DBBE /* FlexNavigationController.m */; };
+		8848DD72217D71E200C62120 /* TestModalVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8848DD71217D71E200C62120 /* TestModalVC.xml */; };
 		8872A27F2170755E0081EEA4 /* addnewtype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A2792170755E0081EEA4 /* addnewtype@2x.png */; };
 		8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27A2170755E0081EEA4 /* arrow_right@2x.png */; };
 		8872A2812170755E0081EEA4 /* batchcheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8872A27B2170755E0081EEA4 /* batchcheck@2x.png */; };
@@ -79,6 +80,7 @@
 		8842BF942175C31F007059FE /* TestTableCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestTableCell.xml; sourceTree = "<group>"; };
 		8843F3012179B8390040DBBE /* FlexNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexNavigationController.h; sourceTree = "<group>"; };
 		8843F3022179B8390040DBBE /* FlexNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexNavigationController.m; sourceTree = "<group>"; };
+		8848DD71217D71E200C62120 /* TestModalVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestModalVC.xml; sourceTree = "<group>"; };
 		8872A2792170755E0081EEA4 /* addnewtype@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addnewtype@2x.png"; sourceTree = "<group>"; };
 		8872A27A2170755E0081EEA4 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
 		8872A27B2170755E0081EEA4 /* batchcheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batchcheck@2x.png"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				8842BF8F2175B50B007059FE /* TestTableVC.xml */,
 				8842BF942175C31F007059FE /* TestTableCell.xml */,
 				881EE6B92177366E00951F5C /* TestScrollVC.xml */,
+				8848DD71217D71E200C62120 /* TestModalVC.xml */,
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				888D5605216F3ACB00AE2705 /* system.style in Resources */,
 				8872A27F2170755E0081EEA4 /* addnewtype@2x.png in Resources */,
 				8842BF952175C31F007059FE /* TestTableCell.xml in Resources */,
+				8848DD72217D71E200C62120 /* TestModalVC.xml in Resources */,
 				88A00183216C3BBC00AEC30D /* Assets.xcassets in Resources */,
 				8872A2832170755E0081EEA4 /* select@2x.png in Resources */,
 				8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */,

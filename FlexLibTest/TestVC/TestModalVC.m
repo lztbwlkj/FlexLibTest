@@ -8,16 +8,39 @@
 
 #import "TestModalVC.h"
 
-@interface TestModalVC ()
+@interface TestModalVC (){
+    FlexModalView *modelView;
+    
+}
 
 @end
 
 @implementation TestModalVC
+-(NSString *)getFlexName{
+    return NSStringFromClass([self class]);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
 }
+
+-(void)tapModalBottom{
+    [modelView setViewAttr:@"position" Value:@"bottom"];
+    [modelView showModalInView:self.view Anim:YES];
+}
+
+-(void)tapModalCenter{
+    [modelView setViewAttr:@"position" Value:@"center"];
+    [modelView showModalInView:self.view Anim:YES];
+}
+
+-(void)tapModalTop{
+    [modelView setViewAttr:@"position" Value:@"top"];
+    [modelView showModalInView:self.view Anim:YES];
+}
+
 
 
 @end
