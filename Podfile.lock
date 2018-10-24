@@ -1,8 +1,8 @@
 PODS:
-  - FlexLib (1.9.2):
-    - FlexLib/no-arc (= 1.9.2)
+  - FlexLib (1.9.4):
+    - FlexLib/no-arc (= 1.9.4)
     - Yoga (= 1.6.0)
-  - FlexLib/no-arc (1.9.2):
+  - FlexLib/no-arc (1.9.4):
     - Yoga (= 1.6.0)
   - HBDNavigationBar (1.3.2)
   - Yoga (1.6.0)
@@ -12,7 +12,7 @@ DEPENDENCIES:
   - HBDNavigationBar
 
 SPEC CHECKSUMS:
-  FlexLib: 2ad181452278f13f59e5678843dc9abc105f130f
+  FlexLib: 9e55db4dc4b1f57ec76bbc11fa53778c32c3b10b
   HBDNavigationBar: 18466ad5753c61de90bdda7bb0f5de835050f548
   Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
 

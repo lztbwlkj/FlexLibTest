@@ -20,7 +20,7 @@
 FLEXSET(source)
 {
     UIImage* img = [UIImage imageNamed:sValue inBundle:[owner bundleForImages] compatibleWithTraitCollection:nil];
-    self.image = img;
+    self.image = img ;
 }
 FLEXSET(highlightSource)
 {

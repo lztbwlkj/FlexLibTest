@@ -38,8 +38,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.hbd_barStyle = UIBarStyleBlack;
-//    self.hbd_barAlpha = 0.0;
+    self.hbd_barAlpha = 0.0;
+    self.hbd_titleTextAttributes = @{NSForegroundColorAttributeName:UIColor.blackColor,NSFontAttributeName:[UIFont systemFontOfSize:19]};
+    
     self.keepNavbarTranslucent = NO;
     [FlexSetPreviewVC presentInVC:self];
 }
