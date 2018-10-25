@@ -41,6 +41,8 @@
     [modelView showModalInView:self.view Anim:YES];
 }
 
-
+-(void)closeModal{
+    [modelView hideModal:YES];
+}
 
 @end

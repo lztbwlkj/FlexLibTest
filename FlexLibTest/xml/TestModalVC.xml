@@ -23,10 +23,32 @@
 			<UIImageView attr="source:arrow_right.png"/>
 		</UIView>
 		<UIView layout="height:1" attr="bgColor:#e6e6e6"/>
-		<UIView layout="@:system/filterRow" attr="bgColor:#fafafa" > 
-		  	<UILabel layout="" attr="@:system/filterLeftLabel,text:操作时间" />
+		<UIView layout="@:system/filterRow" attr="bgColor:#fafafa">
+			<UILabel layout="" attr="@:system/filterLeftLabel,text:操作时间" />
 			<UILabel layout="flex:1" attr="@:system/rightContent,text:2018-10-22"/>
 			<UIImageView attr="source:arrow_right.png"/>
+		</UIView>
+		<UIView layout="height:1" attr="#e6e6e6" />
+		<UIView layout="@:system/filterRow" attr="bgColor:#fafafa">
+			<UILabel layout="" attr="@:system/filterLeftLabel,text:操作人" />
+			<UILabel layout="flex:1" attr="@:system/rightContent,text:回龙观阿斯顿发"/>
+			<UIImageView attr="source:arrow_right.png"/>
+		</UIView>
+		<UIView layout="height:1" attr="bgColor:#e6e6e6"/>
+		<UIView layout="@:system/filterRow" attr="bgColor:#fafafa">
+			<UILabel attr="@:system/filterLeftLabel,text:物品编号"/>
+			<UILabel layout="flex:1" attr="@:system/rightContent,text:sn-2017"/>
+			<UIImageView attr="source:arrow_right.png"/>
+		</UIView>
+
+		<UIView layout="height:50,flexDirection:row,alignItems:center" attr="bgColor:#fafafa">
+			<UIView layout="width:*50%,height:100%,justifyContent:center"> 
+				<UILabel layout="" attr="text:cancel,textAlign:center" />
+			</UIView>
+			<UIView onPress="closeModal" layout="width:*50%,height:100%,justifyContent:center" attr="bgColor:#289bf0">
+				<UILabel layout="" attr="text:close Modal,textAlign:center" />
+			</UIView>
+		
 		</UIView>
 	</FlexModalView>
 </UIView>
