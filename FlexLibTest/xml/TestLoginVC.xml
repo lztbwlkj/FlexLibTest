@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<UIView layout="flex:1,alignItems:center" attr="bgColor:white">
+	<FlexScrollView layout="flex:1,width:100%,alignItems:center,padding:50" attr="bgColor:white,vertScroll:true">
+		<FlexTouchView onPress="" layout="alignItems:center">
+			<UIImageView layout="width:100,height:100,alignSelf:center" attr="source:qrcode,borderRadius:50,clipsToBounds:true" />
+		</FlexTouchView>
+        <UIView layout="height:20"/>
+		<FlexTouchView onPress="" layout="alignItems:center">
+			<UILabel layout="" attr="fontSize:20,linesNum:0,color:#333333,text:You can press the buttons above to see the effect. We use FlexTouchView to provide more powerful function and better flexibility than button."/>
+		</FlexTouchView>
+	</FlexScrollView>
+</UIView>
