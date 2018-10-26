@@ -9,7 +9,7 @@
     <FlexScrollView name="_scroll" layout="flex:1,width:100%,alignItems:center" attr="vertScroll:true">
         
         <UILabel name="_label" layout="marginTop:*20"
-        attr="@:system/buttonText,text:You can run on iPhoneX,color:blue" >
+        attr="@:system/buttonText,text:You can run on iPhoneX,color:blue" />
         
         <UILabel name="_label" layout="marginTop:20"
         attr="@:system/buttonText,text:@multilangdemo,linesNum:0,color:blue"/>

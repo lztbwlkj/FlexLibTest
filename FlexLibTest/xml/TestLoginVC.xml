@@ -2,11 +2,16 @@
 <UIView layout="flex:1,alignItems:center" attr="bgColor:white">
 	<FlexScrollView layout="flex:1,width:100%,alignItems:center,padding:50" attr="bgColor:white,vertScroll:true">
 		<FlexTouchView onPress="" layout="alignItems:center">
-			<UIImageView layout="width:100,height:100,alignSelf:center" attr="source:qrcode,borderRadius:50,clipsToBounds:true" />
+			<UIImageView layout="width:100,height:100,alignSelf:center" attr="source:qrcode,borderRadius:50,clipsToBounds:true"> 
+				<FlexTouchMaskView attr="bgColor:black,alpha:0.7"/>
+			</UIImageView>
+		</FlexTouchView>
+		<UIView layout="height:20"/>
+
+		<FlexTouchView onPress="" layout="height:100,width:100%,alignItems:center,justifyContent:center" attr="bgColor:#e5e5e5,borderRadius:8,underlayColor:darkGray">
+			<UILabel layout="width:100%" attr="fontSize:16,textAlign:center,color:red,text:Please touch me and move\,\r\n这是测试touch功能的控件"/>
 		</FlexTouchView>
         <UIView layout="height:20"/>
-		<FlexTouchView onPress="" layout="alignItems:center">
-			<UILabel layout="" attr="fontSize:20,linesNum:0,color:#333333,text:You can press the buttons above to see the effect. We use FlexTouchView to provide more powerful function and better flexibility than button."/>
-		</FlexTouchView>
+			<UILabel layout="width:100%" attr="fontSize:20,linesNum:0,color:#333333,text:You can press the buttons above to see the effect. We use FlexTouchView to provide more powerful function and better flexibility than button."/>
 	</FlexScrollView>
 </UIView>

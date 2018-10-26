@@ -43,6 +43,7 @@
 		88A00193216C3BBD00AEC30D /* FlexLibTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A00192216C3BBD00AEC30D /* FlexLibTestTests.m */; };
 		88A0019E216C3BBD00AEC30D /* FlexLibTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0019D216C3BBD00AEC30D /* FlexLibTestUITests.m */; };
 		88A001AD216C449700AEC30D /* TestVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88A001AC216C449700AEC30D /* TestVC.xml */; };
+		88E4BBBB2182C37100F8B825 /* JustifyContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88E4BBBA2182C37100F8B825 /* JustifyContent.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		88A0019F216C3BBD00AEC30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A001AB216C438600AEC30D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		88A001AC216C449700AEC30D /* TestVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestVC.xml; sourceTree = "<group>"; };
+		88E4BBBA2182C37100F8B825 /* JustifyContent.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JustifyContent.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				881EE6B92177366E00951F5C /* TestScrollVC.xml */,
 				8848DD71217D71E200C62120 /* TestModalVC.xml */,
 				883013992181B2E00050A62F /* TestLoginVC.xml */,
+				88E4BBBA2182C37100F8B825 /* JustifyContent.xml */,
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8830139A2181B2E00050A62F /* TestLoginVC.xml in Resources */,
+				88E4BBBB2182C37100F8B825 /* JustifyContent.xml in Resources */,
 				88A00186216C3BBC00AEC30D /* LaunchScreen.storyboard in Resources */,
 				8872A2842170755E0081EEA4 /* splash.png in Resources */,
 				888D55FD216F387200AE2705 /* Localizable.strings in Resources */,

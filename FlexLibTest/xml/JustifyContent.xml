@@ -1,0 +1,60 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<UIView layout="flex:1,alignItems:center" attr="bgColor:white">
+	<FlexScrollView layout="flex:1,width:100%,paddingTop:15" attr="bgColor:white,vertScroll:true">
+		<!-- 顶部标题栏目 -->
+		<UILabel layout="width:100%" attr="fontSize:16,textAlign:center,color:#333333,linesNum:0,text:justifyContent Demo"/>
+<!--  flex-start && flex-end-->
+		<UIView layout="padding:10,height:200,flexDirection:row,justifyContent:space-around">
+			<UIView layout="width:45%,height:150">
+				<UILabel layout="width:100%" attr="@:system/buttonText,text:flex-start,textAlign:center"/>
+				<UIView layout="height:10" />
+				<UIView layout="height:100%,flexWrap:wrap,alignItems:center" attr="borderColor:black,borderWidth:1,borderRadius:5">
+					<UIView layout="width:50%,height:15%" attr="bgColor:red"/>
+					<UIView layout="width:70%,height:15%" attr="bgColor:green"/>
+					<UIView layout="width:40%,height:15%" attr="bgColor:blue"/></UIView>
+			</UIView>
+			<UIView layout="width:45%,height:150">
+				<UILabel layout="width:100%" attr="@:system/buttonText,text:flex-end,textAlign:center"/>
+				<UIView layout="height:10" />
+				<UIView layout="height:100%,justifyContent:flex-end,flexWrap:wrap,alignItems:center" attr="borderColor:black,borderWidth:1,borderRadius:5">
+					<UIView layout="width:50%,height:15%" attr="bgColor:red"/>
+					<UIView layout="width:70%,height:15%" attr="bgColor:green"/>
+					<UIView layout="width:40%,height:15%" attr="bgColor:blue"/></UIView>
+			</UIView>
+		</UIView>
+
+<!-- center && space-around -->
+		<UIView layout="padding:10,height:200,flexDirection:row,justifyContent:space-around">
+			<UIView layout="width:45%,height:150">
+				<UILabel layout="width:100%" attr="@:system/buttonText,text:center,textAlign:center"/>
+				<UIView layout="height:10" />
+				<UIView layout="height:100%,justifyContent:center,flexWrap:wrap,alignItems:center" attr="borderColor:black,borderWidth:1,borderRadius:5">
+					<UIView layout="width:50%,height:15%" attr="bgColor:red"/>
+					<UIView layout="width:70%,height:15%" attr="bgColor:green"/>
+					<UIView layout="width:40%,height:15%" attr="bgColor:blue"/></UIView>
+			</UIView>
+			<UIView layout="width:45%,height:150">
+				<UILabel layout="width:100%" attr="@:system/buttonText,text:space-around,textAlign:center"/>
+				<UIView layout="height:10" />
+				<UIView layout="height:100%,justifyContent:space-around,flexWrap:wrap,alignItems:center" attr="borderColor:black,borderWidth:1,borderRadius:5">
+					<UIView layout="width:50%,height:15%" attr="bgColor:red"/>
+					<UIView layout="width:70%,height:15%" attr="bgColor:green"/>
+					<UIView layout="width:40%,height:15%" attr="bgColor:blue"/></UIView>
+			</UIView>
+		</UIView>
+
+<!-- space-between -->
+		<UIView layout="padding:10,height:200,flexDirection:row ,justifyContent:space-around">
+			<UIView layout="width:45%,height:150">
+				<UILabel layout="width:100%" attr="@:system/buttonText,text:space-between,textAlign:center"/>
+				<UIView layout="height:10" />
+				<UIView layout="height:100%,justifyContent:space-between,flexWrap:wrap,alignItems:center" attr="borderColor:black,borderWidth:1,borderRadius:5">
+					<UIView layout="width:50%,height:15%" attr="bgColor:red"/>
+					<UIView layout="width:70%,height:15%" attr="bgColor:green"/>
+					<UIView layout="width:40%,height:15%" attr="bgColor:blue"/></UIView>
+			</UIView>
+			<UIView layout="width:45%,height:150"></UIView>
+		</UIView>
+		<UIView layout="height:20" />
+	</FlexScrollView>
+</UIView>

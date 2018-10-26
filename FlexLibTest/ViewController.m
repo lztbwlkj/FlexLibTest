@@ -44,6 +44,7 @@
     self.hbd_titleTextAttributes = @{NSForegroundColorAttributeName:UIColor.blackColor,NSFontAttributeName:[UIFont systemFontOfSize:19]};
     
     self.keepNavbarTranslucent = NO;
+
     [FlexSetPreviewVC presentInVC:self];
 }
 
@@ -68,7 +69,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)onjustifyContent:(id)sender {
-    DemoFlexVC* vc=[[DemoFlexVC alloc]initWithFlexName:@"justifyContent"];
+    DemoFlexVC* vc=[[DemoFlexVC alloc] initWithFlexName:@"justifyContent"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)onTextView:(id)sender {
