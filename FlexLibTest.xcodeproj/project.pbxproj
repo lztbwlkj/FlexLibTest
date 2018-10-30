@@ -43,6 +43,7 @@
 		88A00193216C3BBD00AEC30D /* FlexLibTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A00192216C3BBD00AEC30D /* FlexLibTestTests.m */; };
 		88A0019E216C3BBD00AEC30D /* FlexLibTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0019D216C3BBD00AEC30D /* FlexLibTestUITests.m */; };
 		88A001AD216C449700AEC30D /* TestVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88A001AC216C449700AEC30D /* TestVC.xml */; };
+		88A9B3812186D69E00ABDA3C /* TextViewVC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88A9B3802186D69E00ABDA3C /* TextViewVC.xml */; };
 		88E4BBBB2182C37100F8B825 /* JustifyContent.xml in Resources */ = {isa = PBXBuildFile; fileRef = 88E4BBBA2182C37100F8B825 /* JustifyContent.xml */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		88A0019F216C3BBD00AEC30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A001AB216C438600AEC30D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		88A001AC216C449700AEC30D /* TestVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestVC.xml; sourceTree = "<group>"; };
+		88A9B3802186D69E00ABDA3C /* TextViewVC.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TextViewVC.xml; sourceTree = "<group>"; };
 		88E4BBBA2182C37100F8B825 /* JustifyContent.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = JustifyContent.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 				8848DD71217D71E200C62120 /* TestModalVC.xml */,
 				883013992181B2E00050A62F /* TestLoginVC.xml */,
 				88E4BBBA2182C37100F8B825 /* JustifyContent.xml */,
+				88A9B3802186D69E00ABDA3C /* TextViewVC.xml */,
 			);
 			path = xml;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				88A00183216C3BBC00AEC30D /* Assets.xcassets in Resources */,
 				8872A2832170755E0081EEA4 /* select@2x.png in Resources */,
 				8872A2802170755E0081EEA4 /* arrow_right@2x.png in Resources */,
+				88A9B3812186D69E00ABDA3C /* TextViewVC.xml in Resources */,
 				88A00181216C3BAD00AEC30D /* Main.storyboard in Resources */,
 				888D55CA216F1B1500AE2705 /* ViewController.xml in Resources */,
 				8842BF902175B50B007059FE /* TestTableVC.xml in Resources */,
